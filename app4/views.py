@@ -56,7 +56,7 @@ def checkUsername(request):
         status = 'Valid username'
     return Response(status)   
 
-""" 
+ 
 @api_view(['GET'])
 def viewProducts(request):
     csv_file = open('app4/products.csv')
@@ -72,7 +72,7 @@ def viewProducts(request):
             print(f'{row[1]} \t {row[2]} \t {row[3]}')
             line_count += 1
             display.append(f'{row[1]} {row[2]} {row[3]}')  
-    return Response(display)  """
+    return Response(display)
             
 
 
